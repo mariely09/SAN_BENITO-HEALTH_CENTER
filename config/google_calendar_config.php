@@ -12,8 +12,8 @@
  */
 
 // Google OAuth 2.0 Credentials
-define('GOOGLE_CLIENT_ID', '442738811189-h6gbokps4krl6b9jrm1rng9s9maeoeml.apps.googleusercontent.com');
-define('GOOGLE_CLIENT_SECRET', ''); // Copy the google client secret
+define('GOOGLE_CLIENT_ID', 'your-client-id');
+define('GOOGLE_CLIENT_SECRET', 'your-secret');
 
 // Dynamic Redirect URI - works on localhost, local network IP, and production
 function getRedirectUri() {
@@ -147,3 +147,4 @@ function getValidAccessToken($conn, $userId) {
     
     return $tokenData['access_token'];
 }
+
