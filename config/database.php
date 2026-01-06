@@ -26,7 +26,7 @@ function createDefaultAdmin($conn) {
         $admin_username = 'admin';
         $admin_password = 'admin123';
         $admin_fullname = 'System Administrator';
-        $admin_email = 'sanbenitohealthcenter0123@gmail.com';
+        $admin_email = 'your-email@gmail.com';
         $admin_role = 'admin';
         $admin_status = 'approved';
         $created_at = date('Y-m-d H:i:s');
@@ -51,3 +51,4 @@ if (mysqli_num_rows($table_result) > 0) {
     // Create default accounts
     createDefaultAdmin($conn);
 }
+
