@@ -1,0 +1,687 @@
+
+/* Section Title */
+.section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.4rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.section-title i {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border-radius: 2px;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover::before {
+    transform: scaleX(1);
+}
+
+.stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(32, 201, 151, 0.3);
+}
+
+.stats-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    box-shadow: 0 4px 12px rgba(32, 201, 151, 0.3);
+    transition: all 0.3s ease;
+}
+
+.stats-icon i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.stats-card:hover .stats-icon {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 6px 18px rgba(32, 201, 151, 0.3);
+}
+
+.stats-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.stats-label {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Primary Buttons */
+.appointments-list .btn-primary,
+.card-body.border-bottom .btn-primary,
+button.btn.btn-primary {
+    background: linear-gradient(135deg, #28a745, #20c997) !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3) !important;
+}
+
+.appointments-list .btn-primary:hover,
+.card-body.border-bottom .btn-primary:hover,
+button.btn.btn-primary:hover {
+    background: linear-gradient(135deg, #218838, #1ea085) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(32, 201, 151, 0.4) !important;
+    color: white !important;
+}
+
+/* Card Styling */
+.appointments-list .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.appointments-list .card-header {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    color: white;
+    border-bottom: 3px solid #27ae60;
+    padding: 1.5rem 2rem;
+}
+
+.card-body.border-bottom {
+    background: #f8f9fa !important;
+    padding: 1.5rem 2rem !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+/* Form Controls */
+.card-body.border-bottom .form-control,
+.card-body.border-bottom .form-select {
+    border: 1px solid #ced4da !important;
+    border-radius: 6px !important;
+    padding: 0.75rem 1rem !important;
+    transition: all 0.3s ease;
+    background-color: white !important;
+}
+
+.card-body.border-bottom .form-control:focus,
+.card-body.border-bottom .form-select:focus {
+    border-color: #28a745 !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+    outline: 0 !important;
+}
+
+.form-label.fw-semibold {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Table Styling */
+.appointments-list .table {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.appointments-list .table thead th {
+    background: transparent !important;
+    color: #495057 !important;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+.appointments-list .table thead th:first-child {
+    padding-left: 1.5rem !important;
+}
+
+.appointments-list .table thead th:last-child {
+    padding-right: 1.5rem !important;
+}
+
+.appointments-list .table tbody td:first-child {
+    padding-left: 1.5rem !important;
+}
+
+.appointments-list .table tbody td:last-child {
+    padding-right: 1.5rem !important;
+}
+
+/* Action Buttons */
+.appointment-btn-confirm,
+.appointment-btn-complete,
+.appointment-btn-cancel,
+.appointments-list .btn-group .btn {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    text-decoration: none;
+    min-width: 36px;
+    height: 36px;
+}
+
+.appointment-btn-confirm i,
+.appointment-btn-complete i,
+.appointment-btn-cancel i,
+.appointments-list .btn i {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.appointment-btn-confirm:not(.disabled):hover i,
+.appointment-btn-complete:not(.disabled):hover i,
+.appointment-btn-cancel:not(.disabled):hover i,
+.appointments-list .btn:hover:not(.disabled) i {
+    transform: scale(1.1);
+}
+
+/* Confirm Button - Green */
+.appointment-btn-confirm,
+.appointments-list .btn-success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.appointment-btn-confirm:hover:not(.disabled),
+.appointments-list .btn-success:hover:not(.disabled) {
+    background: linear-gradient(135deg, #218838, #1ea085);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Complete Button - Dark Blue */
+.appointment-btn-complete {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.3);
+}
+
+.appointment-btn-complete:hover:not(.disabled) {
+    background: linear-gradient(135deg, #1a252f, #2c3e50);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.4);
+}
+
+/* Cancel Button - Red */
+.appointment-btn-cancel,
+.appointments-list .btn-danger {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.appointment-btn-cancel:hover:not(.disabled),
+.appointments-list .btn-danger:hover:not(.disabled) {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* Disabled State */
+.appointment-btn-confirm.disabled,
+.appointment-btn-complete.disabled {
+    background: linear-gradient(135deg, #6c757d, #5a6268) !important;
+    box-shadow: 0 1px 3px rgba(108, 117, 125, 0.2) !important;
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+.appointment-btn-cancel.disabled,
+.btn.disabled,
+.btn-group .btn.disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+.disabled:hover {
+    transform: none !important;
+}
+
+/* Action Button Container */
+.appointment-actions-container,
+.appointments-list .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+    min-height: 40px;
+}
+
+.table td:last-child,
+.table th:last-child {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.75rem 1rem;
+}
+
+/* Table Row Styling */
+.appointments-list .table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ecf0f1;
+    background-color: white !important;
+}
+
+.appointments-list .table tbody tr:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.appointments-list .table tbody tr td {
+    vertical-align: middle;
+    border-bottom: 1px solid #ecf0f1;
+    color: #495057;
+    padding: 0.75rem 1rem;
+    background-color: transparent !important;
+}
+
+.appointments-list .table tbody tr td strong {
+    color: #2c3e50 !important;
+    font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Extra Small Devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .section-title {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .stats-card {
+        margin-bottom: 1rem;
+    }
+    
+    .stats-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .stats-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .stats-number {
+        font-size: 1.4rem;
+    }
+    
+    .stats-label {
+        font-size: 0.75rem;
+    }
+    
+    .table-card .card-header {
+        padding: 0.75rem;
+    }
+    
+    .table-card .card-body {
+        padding: 0.5rem;
+    }
+    
+    .table {
+        font-size: 0.7rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.25rem;
+    }
+    
+    .badge {
+        font-size: 0.6rem;
+        padding: 2px 4px;
+    }
+    
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .btn-group .btn,
+    .appointment-btn-confirm,
+    .appointment-btn-complete,
+    .appointment-btn-cancel {
+        min-width: 32px;
+        height: 32px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    .appointment-btn-confirm i,
+    .appointment-btn-complete i,
+    .appointment-btn-cancel i,
+    .appointments-list .btn i {
+        font-size: 12px;
+    }
+    
+    .appointment-actions-container,
+    .appointments-list .btn-group {
+        gap: 3px;
+        padding: 6px 2px;
+        min-height: 48px;
+    }
+    
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    .modal-xl {
+        max-width: 95%;
+    }
+    
+    .form-label {
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .form-control,
+    .form-select {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .stats-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .stats-icon i {
+        font-size: 1.4rem;
+    }
+    
+    .stats-number {
+        font-size: 1.6rem;
+    }
+    
+    .table {
+        font-size: 0.75rem;
+    }
+    
+    .badge {
+        font-size: 0.65rem;
+    }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .stats-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .stats-number {
+        font-size: 1.7rem;
+    }
+    
+    .table {
+        font-size: 0.8rem;
+    }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .stats-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .stats-number {
+        font-size: 1.8rem;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-width: 767.98px) and (orientation: landscape) {
+    .stats-card {
+        margin-bottom: 0.5rem;
+    }
+    
+    .stats-icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stats-icon i {
+        font-size: 1rem;
+    }
+    
+    .stats-number {
+        font-size: 1.2rem;
+    }
+    
+    .stats-label {
+        font-size: 0.7rem;
+    }
+    
+    .table {
+        font-size: 0.65rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.2rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .stats-card:hover {
+        transform: none;
+        box-shadow: 0 4px 15px rgba(32, 201, 151, 0.3);
+    }
+    
+    .btn {
+        min-height: 44px;
+    }
+    
+    .table-responsive {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .stats-icon i,
+    .section-title i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .btn,
+    .stats-icon,
+    .pagination-wrapper,
+    .navbar {
+        display: none !important;
+    }
+    
+    .container-fluid {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    .stats-card,
+    .table-card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+    
+    .table {
+        font-size: 8px !important;
+    }
+    
+    .badge {
+        border: 1px solid #000 !important;
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* ========================================
+   PAGE-SPECIFIC STYLES
+   ======================================== */
+
+/* Body Background */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    min-height: 100vh !important;
+}
+
+/* Welcome Title Icon */
+.welcome-title .fas.fa-calendar-check {
+    color: #28a745;
+}
+
+/* Table Column Width Constraints */
+.table tbody td:nth-child(4),
+.table th:nth-child(4), 
+.table td:nth-child(4) {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .table th:nth-child(4), 
+    .table td:nth-child(4) { 
+        max-width: 150px;
+    }
+}
+
+
+/* Appointments Header Buttons - Show text on all screen sizes */
+.appointments-header-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
+}
+
+.appointments-btn {
+    white-space: nowrap !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    flex-shrink: 0 !important;
+    border-radius: 0.375rem !important;
+    min-height: 38px !important;
+}
+
+.appointments-btn i {
+    margin-right: 0.25rem !important;
+}
+
+@media (max-width: 768px) {
+    .appointments-header-buttons {
+        gap: 0.4rem !important;
+    }
+    
+    .appointments-btn {
+        padding: 0.45rem 0.9rem !important;
+        font-size: 0.85rem !important;
+        min-height: 36px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .appointments-header-buttons {
+        gap: 0.3rem !important;
+    }
+    
+    .appointments-btn {
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.75rem !important;
+        min-height: 34px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointments-header-buttons {
+        gap: 0.25rem !important;
+    }
+    
+    .appointments-btn {
+        padding: 0.35rem 0.7rem !important;
+        font-size: 0.7rem !important;
+        min-height: 32px !important;
+    }
+}
+
+@media (max-width: 414px) {
+    .appointments-header-buttons {
+        gap: 0.2rem !important;
+    }
+    
+    .appointments-btn {
+        padding: 0.3rem 0.6rem !important;
+        font-size: 0.65rem !important;
+        min-height: 30px !important;
+    }
+}
