@@ -1,0 +1,1097 @@
+ body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    min-height: 100vh !important;
+}
+
+/* Section Title Styling */
+.section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-bottom: 0.4rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border-radius: 2px;
+}
+
+/* Statistics Cards */
+.statistics-section {
+    margin-bottom: 2rem;
+}
+
+.stats-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+/* Responsive Statistics Cards */
+@media (max-width: 767.98px) {
+    .statistics-section .row {
+        margin: 0 -8px;
+    }
+    
+    .statistics-section .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 8px;
+        margin-bottom: 16px;
+    }
+    
+    .stats-card {
+        margin-bottom: 0;
+    }
+    
+    .stats-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 0.75rem;
+    }
+    
+    .stats-icon i {
+        font-size: 1.4rem;
+    }
+    
+    .stats-number {
+        font-size: 1.5rem;
+    }
+    
+    .stats-label {
+        font-size: 0.8rem;
+    }
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover::before {
+    transform: scaleX(1);
+}
+
+.stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stats-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.25);
+    transition: all 0.3s ease;
+}
+
+.stats-icon i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.stats-card:hover .stats-icon {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 6px 18px rgba(40, 167, 69, 0.35);
+}
+
+.stats-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.stats-label {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(32, 201, 151, 0.3);
+}
+
+/* Quick Actions Section */
+.quick-actions {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%) !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    border: 1px solid #e9ecef !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+.quick-actions .btn {
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    padding: 0.6rem 1.2rem !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.quick-actions .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease;
+}
+
+.quick-actions .btn:hover::before {
+    left: 100%;
+}
+
+.quick-actions .btn-secondary {
+    background: linear-gradient(135deg, #6c757d, #5a6268) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3) !important;
+    border: none !important;
+}
+
+.quick-actions .btn-secondary:hover {
+    background: linear-gradient(135deg, #5a6268, #495057) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4) !important;
+    color: white !important;
+}
+
+.quick-actions .btn-outline-secondary {
+    background: white !important;
+    border: 2px solid #2c3e50 !important;
+    color: #2c3e50 !important;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1) !important;
+}
+
+.quick-actions .btn-outline-secondary:hover {
+    background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    border-color: #2c3e50 !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3) !important;
+}
+
+.quick-actions .btn-info {
+    background: linear-gradient(135deg, #17a2b8, #138496) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(23, 162, 184, 0.3) !important;
+    border: none !important;
+}
+
+.quick-actions .btn-info:hover {
+    background: linear-gradient(135deg, #138496, #117a8b) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(23, 162, 184, 0.4) !important;
+    color: white !important;
+}
+
+.quick-actions .btn i {
+    transition: transform 0.3s ease !important;
+}
+
+.quick-actions .btn:hover i {
+    transform: scale(1.1) !important;
+}
+
+/* Button Fixes */
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-close {
+    transform: none !important;
+}
+
+.btn-close:hover {
+    transform: none !important;
+}
+
+/* Filter Controls */
+.filter-controls {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Alert Styling */
+.alert {
+    padding-right: 3rem;
+    position: relative;
+}
+
+.alert .btn-close {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    padding: 0.5rem;
+}
+
+.alert .btn-close:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Inline styles moved from PHP file */
+
+.welcome-title .fas.fa-syringe {
+    color: #28a745;
+}
+
+.vaccination-list .card-header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    border-bottom: 3px solid #27ae60;
+    padding: 1.5rem 2rem;
+}
+
+.filter-form-row {
+    padding-top: 2rem;
+}
+
+.bottom-spacing {
+    height: 60px;
+}
+
+/* Modal Styling */
+.modal-header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    border-bottom: 3px solid #27ae60;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem 2rem;
+}
+
+/* Form styling in modal */
+.modal .form-control:focus,
+.modal .form-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.modal .form-label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Modal button styling */
+.modal .btn-primary {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border: none;
+    color: white;
+}
+
+.modal .btn-primary:hover {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(32, 201, 151, 0.3);
+}
+
+/* View Modal Specific Styling */
+.modal-lg .table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.modal-lg .table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+/* Baby info card in view modal */
+.modal .card.border-0.bg-light {
+    background-color: #f8f9fa !important;
+    border-radius: 8px;
+}
+
+/* Edit button in view modal */
+#editFromViewBtn {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    border: none;
+    color: white;
+}
+
+#editFromViewBtn:hover {
+    background: linear-gradient(135deg, #20c997, #17a2b8);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(32, 201, 151, 0.3);
+}
+
+/* Baby info alert in edit modal */
+.modal .alert-info {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+    color: #1976d2;
+}
+
+/* Status badges in view modal */
+.modal .badge {
+    font-size: 0.875rem;
+    padding: 0.5em 0.75em;
+}
+
+/* Modal transition improvements */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+/* Action Button Styling */
+.vaccination-btn-view,
+.vaccination-btn-edit,
+.vaccination-btn-delete {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    min-width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* View button styles */
+.vaccination-btn-view {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.vaccination-btn-view:hover {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: white;
+}
+
+.vaccination-btn-view:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Edit button styles */
+.vaccination-btn-edit {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.25);
+}
+
+.vaccination-btn-edit:hover {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.25);
+    color: white;
+}
+
+.vaccination-btn-edit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.25);
+}
+
+/* Delete button styles */
+.vaccination-btn-delete {
+    background: linear-gradient(135deg, #dc3545, #c82333) !important;
+    color: white;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+    text-decoration: none;
+}
+
+.vaccination-btn-delete:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.vaccination-btn-delete:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(220, 53, 69, 0.3);
+}
+
+/* Button icons */
+.vaccination-btn-view i,
+.vaccination-btn-edit i,
+.vaccination-btn-delete i {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.vaccination-btn-view:hover i {
+    transform: scale(1.1);
+}
+
+.vaccination-btn-edit:hover i {
+    transform: scale(1.1);
+}
+
+.vaccination-btn-delete:hover i {
+    transform: scale(1.1);
+}
+
+/* Action buttons container */
+.vaccination-actions-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4px !important;
+    padding: 4px 12px 4px 4px !important;
+    flex-wrap: nowrap !important;
+    min-width: 120px !important;
+    white-space: nowrap !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .vaccination-btn-view,
+    .vaccination-btn-edit,
+    .vaccination-btn-delete {
+        min-width: 28px;
+        height: 28px;
+    }
+
+    .vaccination-btn-view i,
+    .vaccination-btn-edit i,
+    .vaccination-btn-delete i {
+        font-size: 11px;
+    }
+
+    .vaccination-actions-container {
+        gap: 2px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 2px;
+        min-width: 100px;
+    }
+    
+    /* Mobile responsive for appointment action buttons */
+    .vaccination-actions-container a,
+    .vaccination-actions-container button {
+        width: 28px !important;
+        height: 28px !important;
+        margin: 0 1px !important;
+        font-size: 11px !important;
+        border-radius: 4px !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .vaccination-actions-container a i,
+    .vaccination-actions-container button i {
+        font-size: 11px !important;
+    }
+}
+
+/* Table Row Styling */
+.vaccination-row {
+    transition: none;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.vaccination-row:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Table cell styling */
+.vaccination-row td {
+    vertical-align: middle;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+/* Text styling in table */
+.vaccination-row .fw-semibold.text-dark {
+    color: #2c3e50 !important;
+    font-weight: 600;
+}
+
+/* Table Styling - Match babies.css exactly */
+.vaccination-list .table thead th {
+    background: transparent !important;
+    color: #495057 !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+.vaccination-list .table thead th:first-child {
+    padding-left: 1.5rem !important;
+}
+
+.vaccination-list .table tbody td:first-child {
+    padding-left: 1.5rem !important;
+}
+
+/* Actions column specific width */
+.vaccination-list .table thead th:last-child,
+.vaccination-list .table tbody td:last-child {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+@media (max-width: 768px) {
+    .vaccination-list .table thead th:last-child,
+    .vaccination-list .table tbody td:last-child {
+        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+    }
+    
+    /* Enable horizontal scroll for table on mobile */
+    .vaccination-list .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .vaccination-list .table {
+        min-width: 800px;
+    }
+}
+
+.vaccination-list .table {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+/* Table Row Styling - Match babies.css exactly */
+.appointment-row {
+    transition: none;
+    border-bottom: 1px solid #ecf0f1;
+    background-color: white !important;
+}
+
+.appointment-row:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.appointment-row td {
+    vertical-align: middle;
+    border-bottom: 1px solid #ecf0f1;
+    color: #495057;
+    padding: 0.75rem 1rem;
+}
+
+.appointment-row .fw-semibold.text-dark,
+.appointment-row strong {
+    color: #2c3e50 !important;
+    font-weight: 600;
+}
+
+/* Remove all Bootstrap table row background colors */
+.vaccination-list .table tbody tr,
+.vaccination-list .table tbody tr.table-success,
+.vaccination-list .table tbody tr.table-danger,
+.vaccination-list .table tbody tr.table-primary,
+.vaccination-list .table tbody tr.table-warning,
+.vaccination-list .table tbody tr.table-info {
+    background-color: white !important;
+    --bs-table-bg: white !important;
+    --bs-table-accent-bg: transparent !important;
+}
+
+.vaccination-list .table tbody tr:hover,
+.vaccination-list .table tbody tr.table-success:hover,
+.vaccination-list .table tbody tr.table-danger:hover,
+.vaccination-list .table tbody tr.table-primary:hover,
+.vaccination-list .table tbody tr.table-warning:hover,
+.vaccination-list .table tbody tr.table-info:hover {
+    background-color: white !important;
+    --bs-table-bg: white !important;
+    --bs-table-accent-bg: transparent !important;
+}
+
+/* Override Bootstrap table-hover class */
+.vaccination-list .table-hover tbody tr:hover,
+.vaccination-list .table-hover tbody tr:hover td,
+.vaccination-list .table-hover tbody tr:hover th {
+    background-color: white !important;
+    --bs-table-hover-bg: white !important;
+    --bs-table-hover-color: inherit !important;
+}
+
+/* Remove focus styles */
+.vaccination-list .table tbody tr:focus,
+.vaccination-list .table tbody tr:focus-within {
+    background-color: white !important;
+    outline: none !important;
+}
+/* D
+ata table card body white background */
+.vaccination-list .card-body {
+    background-color: white !important;
+}
+
+/* Vaccinations header improvements - Force single row layout */
+.card-header {
+    padding: 1rem !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: 60px !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    min-height: 60px !important;
+}
+
+.vaccinations-header-title {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    margin-right: 0.5rem !important;
+}
+
+.vaccinations-header-buttons {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    gap: 0.25rem !important;
+    align-items: center !important;
+    min-width: fit-content !important;
+}
+
+.vaccinations-btn {
+    white-space: nowrap !important;
+    padding: 0.375rem 0.5rem !important;
+    font-size: 0.8rem !important;
+    flex-shrink: 0 !important;
+    min-width: auto !important;
+    border: 1px solid transparent !important;
+}
+
+.vaccinations-btn i {
+    font-size: 0.8rem !important;
+}
+
+/* Filter button alignment */
+.filter-form-row .btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.filter-form-row .btn i {
+    vertical-align: middle !important;
+}
+
+/* Action buttons container - Force single row */
+.vaccination-actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 4px;
+    min-height: 44px;
+}
+
+/* Center the Actions column content */
+.table td:last-child {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+/* Action button styling */
+.vaccination-btn-confirm, .vaccination-btn-complete, .vaccination-btn-cancel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    min-width: 36px;
+    height: 36px;
+    padding: 0.4rem 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.vaccination-btn-confirm {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white !important;
+}
+
+.vaccination-btn-complete {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white !important;
+}
+
+.vaccination-btn-cancel {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white !important;
+}
+
+.vaccination-btn-confirm:hover {
+    background: linear-gradient(135deg, #20c997, #17a2b8);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+    color: white !important;
+}
+
+.vaccination-btn-complete:hover {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.3);
+    color: white !important;
+}
+
+.vaccination-btn-cancel:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+    color: white !important;
+}
+
+.vaccination-btn-confirm:active,
+.vaccination-btn-complete:active,
+.vaccination-btn-cancel:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.vaccination-btn-confirm.disabled, .vaccination-btn-complete.disabled, .vaccination-btn-cancel.disabled {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vaccination-btn-confirm.disabled:hover,
+.vaccination-btn-complete.disabled:hover,
+.vaccination-btn-cancel.disabled:hover {
+    transform: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button icons */
+.vaccination-btn-confirm i,
+.vaccination-btn-complete i,
+.vaccination-btn-cancel i {
+    font-size: 14px;
+}
+
+/* Filter form improvements */
+.filter-form-row {
+    padding-top: 0 !important;
+}
+
+@media (max-width: 576px) {
+    .filter-form-row {
+        margin-top: 0.5rem !important;
+    }
+    
+    .filter-form-row .d-flex {
+        margin-top: 0.5rem !important;
+    }
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    
+    .welcome-subtitle {
+        display: none !important;
+    }
+    
+    .welcome-title {
+        font-size: 1.3rem !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .welcome-title i {
+        font-size: 1.2rem !important;
+        margin-right: 0.5rem !important;
+        flex-shrink: 0 !important;
+    }
+    
+    .vaccinations-header-title {
+        font-size: 0.9rem !important;
+        margin-bottom: 0 !important;
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        margin-right: 0.25rem !important;
+    }
+    
+    .vaccinations-header-title i {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Action buttons on mobile */
+    .vaccination-actions-container {
+        gap: 3px;
+        padding: 6px 12px 6px 2px;
+        min-height: 48px;
+    }
+    
+    .vaccination-btn-confirm,
+    .vaccination-btn-complete,
+    .vaccination-btn-cancel {
+        min-width: 32px;
+        height: 32px;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+        border-radius: 5px;
+    }
+    
+    .vaccination-btn-confirm i,
+    .vaccination-btn-complete i,
+    .vaccination-btn-cancel i {
+        font-size: 12px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .welcome-title {
+        font-size: 1.1rem !important;
+    }
+    
+    .welcome-title i {
+        font-size: 1rem !important;
+        margin-right: 0.4rem !important;
+    }
+    
+    .vaccinations-header-title {
+        font-size: 0.8rem !important;
+        margin-right: 0.15rem !important;
+        margin-left: 0.25rem !important;
+    }
+    
+    .vaccinations-header-title i {
+        font-size: 0.75rem !important;
+        margin-right: 0.25rem !important;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .welcome-title {
+        font-size: 1rem !important;
+    }
+    
+    .welcome-title i {
+        font-size: 0.95rem !important;
+        margin-right: 0.35rem !important;
+    }
+    
+    .vaccinations-header-title {
+        font-size: 0.8rem !important;
+        margin-right: 0.15rem !important;
+        margin-left: 0.2rem !important;
+    }
+    
+    .vaccinations-header-title small {
+        display: none !important;
+    }
+    
+    .vaccinations-header-title i {
+        font-size: 0.75rem !important;
+        margin-right: 0.25rem !important;
+    }
+}
+
+
+/* Vaccinations Header Buttons - Show text on all screen sizes */
+.vaccinations-header-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    align-items: center !important;
+}
+
+.vaccinations-btn {
+    white-space: nowrap !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+    flex-shrink: 0 !important;
+    border-radius: 0.375rem !important;
+    min-height: 38px !important;
+}
+
+/* Show button text on all screen sizes */
+.vaccinations-btn .d-none.d-lg-inline {
+    display: inline !important;
+}
+
+@media (max-width: 768px) {
+    .vaccinations-header-buttons {
+        gap: 0.4rem !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+    }
+    
+    .vaccinations-btn {
+        padding: 0.45rem 0.9rem !important;
+        font-size: 0.85rem !important;
+        width: auto !important;
+        max-width: none !important;
+        min-width: auto !important;
+        border-radius: 0.375rem !important;
+        min-height: 36px !important;
+    }
+    
+    .vaccinations-btn .d-none.d-lg-inline {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .vaccinations-header-buttons {
+        gap: 0.3rem !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+    }
+    
+    .vaccinations-btn {
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.75rem !important;
+        width: auto !important;
+        max-width: none !important;
+        min-height: 34px !important;
+        border-radius: 0.375rem !important;
+    }
+    
+    .vaccinations-btn .d-none.d-lg-inline {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .vaccinations-header-buttons {
+        gap: 0.25rem !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+    }
+    
+    .vaccinations-btn {
+        padding: 0.35rem 0.7rem !important;
+        font-size: 0.7rem !important;
+        width: auto !important;
+        max-width: none !important;
+        min-height: 32px !important;
+        border-radius: 0.375rem !important;
+    }
+    
+    .vaccinations-btn .d-none.d-lg-inline {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 414px) {
+    .vaccinations-header-buttons {
+        gap: 0.2rem !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+    }
+    
+    .vaccinations-btn {
+        padding: 0.3rem 0.6rem !important;
+        font-size: 0.65rem !important;
+        width: auto !important;
+        max-width: none !important;
+        min-height: 30px !important;
+        border-radius: 0.375rem !important;
+    }
+    
+    .vaccinations-btn .d-none.d-lg-inline {
+        display: inline !important;
+    }
+}
