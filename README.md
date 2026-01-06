@@ -136,11 +136,6 @@ A comprehensive PHP-based health management system for the Barangay Health Cente
 - **Password**: admin123
 - **Role**: Administrator (full system access)
 
-### Test Worker Account
-- **Username**: worker
-- **Password**: worker123
-- **Role**: Healthcare Worker
-
 ## System Architecture
 
 ```
@@ -202,4 +197,5 @@ For technical support or feature requests, please contact the development team o
 
 **Developed for San Benito Barangay Health Center**  
 *Improving community healthcare through technology* 
+
 
