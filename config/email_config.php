@@ -20,9 +20,9 @@ define('SMTP_PASSWORD', 'your-app-password'); // Your email password or app pass
 define('SMTP_SECURE', 'tls'); // 'tls' or 'ssl'
 
 // Email Addresses
-define('FROM_EMAIL', 'sanbenitohealthcenter0123@gmail.com');
+define('FROM_EMAIL', 'your-email@gmail.com');
 define('FROM_NAME', 'San Benito Health Center');
-define('REPLY_TO_EMAIL', 'sanbenitohealthcenter0123@gmail.com');
+define('REPLY_TO_EMAIL', 'your-email@gmail.com');
 
 // Development Settings
 define('SIMULATE_EMAIL_DIR', __DIR__ . '/../emails');
@@ -63,3 +63,4 @@ function isEmailConfigured() {
 }
 
 ?>
+
