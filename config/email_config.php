@@ -15,8 +15,8 @@ define('EMAIL_MODE', 'smtp'); // Change to 'smtp' for real emails
 // SMTP Configuration (only used when EMAIL_MODE = 'smtp')
 define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_PORT', 587);
-define('SMTP_USERNAME', 'sanbenitohealthcenter0123@gmail.com'); // Your email username
-define('SMTP_PASSWORD', 'xrmq tgxx tnjx vvmi'); // Your email password or app password
+define('SMTP_USERNAME', 'your-email@gmail.com'); // Your email username
+define('SMTP_PASSWORD', 'your-app-password'); // Your email password or app password
 define('SMTP_SECURE', 'tls'); // 'tls' or 'ssl'
 
 // Email Addresses
@@ -61,4 +61,5 @@ function isEmailConfigured() {
     
     return false;
 }
+
 ?>
