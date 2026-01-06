@@ -149,7 +149,6 @@ SAN_BENITO_SYSTEM/
 ├── assets/                 # CSS, JS, and image files
 ├── config/                 # Configuration files
 ├── docs/                   # Documentation files
-├── emails/                 # Email templates
 ├── includes/               # Reusable components
 ├── sql/                    # Database scripts
 ├── vendor/                 # Third-party libraries
@@ -203,3 +202,4 @@ For technical support or feature requests, please contact the development team o
 
 **Developed for San Benito Barangay Health Center**  
 *Improving community healthcare through technology* 
+
