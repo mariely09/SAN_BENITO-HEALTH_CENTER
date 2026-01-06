@@ -1,0 +1,53 @@
+License Agreement
+San Benito Health Center Management System Website
+
+Copyright © 2025 Mariely Tolentino, Cris Ann Mendoza, Aira Cordon, Samantha Tan
+
+BSIT 3D, Laguna State Polytechnic University – Sta. Cruz Campus
+
+This website and its Health Center Management System are protected under copyright laws. All rights are reserved.
+
+LICENSE TERMS
+
+1. Ownership
+This system — including all source code, design elements, content, and functionality — is the exclusive intellectual property of Mariely Tolentino, Cris Ann Mendoza, Aira Cordon, and Samantha Tan, developed in 2025. Unauthorized use, copying, or reproduction is strictly prohibited.
+
+2. Use Restrictions
+You ARE NOT ALLOWED to:
+- Redistribute or share any part of the code, design, or database in any form (whether free or paid).
+- Modify, alter, or customize the system without written permission from the original developers.
+- Use the system or its components for commercial purposes (including selling, renting, or offering as a service).
+- Claim ownership, authorship, or credit for the development of the system.
+
+3. Permission Requirement
+Any use beyond personal, non-commercial demonstration requires **explicit written consent** from the original developers. This includes:
+- Hosting or deploying the system for public use
+- Selling the system or offering it to clients
+- Creating derivative works or modified versions
+
+4. Modifications
+Only the original developers listed below have the authority to update, modify, or distribute the system:
+- Mariely Tolentino (BSIT 3D) – tolentinomariely09@gmail.com
+- Cris Ann Mendoza (BSIT 3D) – mendozacrisann14@@gmail.com
+- Aira Cordon (BSIT 3D) – cordonaira26@gmail.com
+- Samantha Tan (BSIT 3D) – tansamanthae0323@gmail.com
+
+5. Healthcare Compliance
+This software is designed for healthcare management purposes. Users are responsible for ensuring compliance with applicable healthcare regulations, including but not limited to:
+- Data Protection Act and privacy laws
+- Medical record keeping requirements
+- Patient confidentiality regulations
+- Local health department guidelines
+
+6. Disclaimer
+This software is provided "as is" without warranties of any kind. The developers are not liable for any loss, damage, or legal claims arising from the use or misuse of this system.
+
+All Rights Reserved.
+
+Any violation of this license may result in legal action under applicable laws.
+
+Issued: December 9, 2025
+
+Developed by: Mariely Tolentino, Cris Ann Mendoza, Aira Cordon, and Samantha Tan
+BSIT 3D A.Y. 2024–2025
+Laguna State Polytechnic University – Sta. Cruz Campus
